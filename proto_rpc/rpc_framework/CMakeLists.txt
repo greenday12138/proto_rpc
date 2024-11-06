@@ -22,6 +22,6 @@ target_link_libraries(rpc_framework
 )
 
 
-install(TARGETS  rpc_framework DESTINATION  ${PROJECT_BINARY_DIR}/lib)
+install(TARGETS  rpc_framework DESTINATION  lib)
 
 

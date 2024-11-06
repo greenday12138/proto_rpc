@@ -24,5 +24,5 @@ ${CMAKE_CURRENT_BINARY_DIR})
 #
 protobuf_generate(TARGET rpc_proto LANGUAGE cpp)
 
-install(TARGETS  rpc_proto DESTINATION  ${PROJECT_BINARY_DIR}/lib)
+install(TARGETS  rpc_proto DESTINATION  lib)
 

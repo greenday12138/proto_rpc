@@ -25,7 +25,7 @@ ${CMAKE_CURRENT_BINARY_DIR})
 protobuf_generate(TARGET monitor_proto LANGUAGE cpp)
 
 install(TARGETS monitor_proto
-  DESTINATION ${PROJECT_BINARY_DIR}/lib)
+  DESTINATION lib)
 
 add_executable(protobuf_rpc_client client.cc)
 target_link_libraries(protobuf_rpc_client monitor_proto network rpc_framework)
@@ -45,5 +45,5 @@ add_executable(test thread_local.cc)
 target_link_libraries(test  pthread )
 
 install(TARGETS protobuf_rpc_server protobuf_rpc_client test
-  DESTINATION ${PROJECT_BINARY_DIR}/bin)
+  DESTINATION bin)
 
